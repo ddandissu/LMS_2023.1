@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header>
+        <h1> Cadastro de usuário - <span style="color:limegreen">Instituto Reflorestar</span></h1>
+    </header>
+    <!--Formulário-->
+    <article>
+        <form method="GET" action="https://www.w3schools.com/action_page.php">
+            <div>
+                <!--Dados pessoais-->
+                <fieldset>
+                    <legend>Dados pessoais:</legend>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" maxlength="15" id="nome" name="user_name"><br>
+                    <label for="cidade">Cidade:</label><br>
+                    <input type="text" id="cidade" name="user_city" value="Quixadá" readonly>
+                </fieldset>
+            </div>
+            <br>
+            <div> 
+                <!--Plantas e quantidade-->
+                <fieldset>
+                    <legend>Como pode nos ajudar?</legend>
+                    <label for="quantidade">Quantas arvores você quer plantar? <span style="color:gray">Min. 2500, Máx. 30000</span></label><br>
+                    <input id="quantidade" type="number" value="25000" min="25000" max="30000"><br>
+                    <label>Qual espécie você quer plantar?:</label><br>
+                    <input type="radio" id="pau_brasil" name="espécie"><label for="pau_brasil">Pau-Brasil</label>
+                    <input type="radio" id="ipe_amarelo" name="espécie"><label for="ipe_amarelo">Ipê-Amarelo</label>
+                    <input type="radio" id="ipe_roxo" name="espécie"><label for="ipe_roxo">Ipê-Roxo</label>
+                    <input type="radio" id="carnauba" name="espécie"><label for="carnauba">Carnaúba</label><br>
+                    <input id="ferramentas" type="checkbox">
+                    <label for="ferramentas">Quero receber ferramentas de plantio</label><br>
+                </fieldset>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Confirmar cadastro">
+            </div>
+            <br>
+           
+        </form>
+    </article>
+    <!--Rodapé-->
+    <footer>
+        <h5>Instituto Reflorestar</h5>
+        <h5>Cnpj: 46.994.492/0001-89</h5>
+    </footer>
+</body>
+</html>

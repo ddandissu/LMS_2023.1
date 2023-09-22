@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: monospace;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+    background-color: #CC8E23;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+.dropdown-btn{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-list {
+    display: none;
+    position: absolute;
+    background-color: ghostwhite;
+    z-index: 1;
+}
+
+.dropdown-list a {
+    display: block;
+    width: 268px;
+    padding: 12px 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown-btn button, .common-btn button{
+    border: none;
+    width: 25vw;
+    height: 100%;
+
+    background-color: transparent; 
+    color: white;
+    font-weight: bolder;
+
+    cursor: pointer;
+}
+
+.dropdown-btn button:hover, .common-btn button:hover{
+    background-color: #805916; 
+}
+
+.dropdown-btn button { 
+    width: 300px;
+}
+
+.dropdown-btn:hover .dropdown-list {
+    display: block;
+}
+
+.dropdown-list a:hover{
+    background-color: #FFB02B;
+}
+
+/* CONTEÚDOS CONTAINER */
+
+.conteudos-container {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+/* MENU LATERAL ESQUERDO */
+
+.left-menu{
+    min-width: 300px; 
+    display: flex;
+    flex-direction: column;
+    background-color: #FFCD78;
+    color: white;
+}
+
+.left-menu button {
+    padding: 10px 0 5px 0;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    padding-left: 5px;
+    color: black
+    
+}
+
+.left-menu button:hover {
+    background-color: #FFB02B;
+    color: black
+   
+}
+
+/* GALERIA DE FOTOS */
+
+.galeria {
+    width: calc(75% - 20px); 
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.galeria .imagem-galeria {
+    max-height: 150px;
+    max-width: 150px;
+    flex: 1 0 21%;
+    margin: 5px;
+    border: solid 2px gray
+}
+
+.galeria .imagem-galeria:hover{
+    rotate: -30deg;
+    border: solid 3px #FFB02B;
+}
+
+/* MENU LATERAL DIREITO */
+
+.right-menu {
+    max-width: calc(25% - 20px) ;
+    max-height: 100%;
+    background-color: #FFCD78;
+    padding: 10px;
+}
+
+/* RODAPE */
+
+.rodape {
+    background-color: #CC8E23;
+    /* margin-top: 80vh; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 10vh;
+    color: white;
+}
+
+.rodape h3 {
+    font-weight: lighter;
+}

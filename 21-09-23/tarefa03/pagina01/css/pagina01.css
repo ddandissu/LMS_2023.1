@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: monospace;
+}
+
+.cabecalho {
+    background-color: seagreen;
+    display: flex;
+    justify-content: space-between;
+    height: 3vw;
+}
+
+.dropdown-btn{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-list {
+    display: none;
+    position: absolute;
+    background-color: ghostwhite;
+    z-index: 1;
+}
+
+.dropdown-list a {
+    display: block;
+    width: 268px;
+    padding: 12px 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown-btn button, .common-btn button{
+    border: none;
+    width: 25vw;
+    height: 100%;
+
+    background-color: transparent; 
+    color: white;
+    font-weight: bolder;
+
+    cursor: pointer;
+}
+
+.dropdown-btn button:hover, .common-btn button:hover{
+    background-color: darkgreen; 
+}
+
+.dropdown-btn button { 
+    width: 300px;
+}
+
+.dropdown-btn:hover .dropdown-list {
+    display: block;
+}
+
+.dropdown-list a:hover{
+    background-color: lightgray;
+}
+
+.conteudos article{
+    background-color: lightgray;
+    border-radius: 30px;
+    border: solid 3px gray;
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudos article h3 {
+    text-align: center;
+} 

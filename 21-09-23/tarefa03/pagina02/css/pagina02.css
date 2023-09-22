@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: monospace;
+}
+
+.side-menu{
+    width: 400px;
+    height: 100vh;  
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+.side-menu button {
+    padding: 10px 0 5px 0;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.side-menu button:hover {
+    background-color: white;
+    color: black;
+}
+
+.conteudos{
+    margin-left: 400px;
+}
+.conteudos article{ 
+
+    background-color: lightgray;
+    border-radius: 30px;
+    border: solid 3px gray;
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudos article h3 {
+    text-align: center;
+} 
+
+.conteudos article img {
+    width: 300px;
+} 
